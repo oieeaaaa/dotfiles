@@ -1,7 +1,8 @@
 {
+  // GLOBAL
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
-  /*"coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
     "typescriptreact",
@@ -10,10 +11,13 @@
     "typescript.tsx",
     "scss",
     "sass",
-    "css"
-  ],*/
-  "eslint.autoFixOnSave": false,
-  "diagnostic.errorSign": "•",
-  "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+    "css",
+    "yaml",
+  ],
+  "diagnostic.errorSign": "🚨",
+  "diagnostic.warningSign": "⚠️",
+  "diagnostic.infoSign": "ℹ️",
+
+  // ESLINT
+  "eslint.autoFixOnSave": true,
 }

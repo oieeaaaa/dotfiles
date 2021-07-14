@@ -134,19 +134,12 @@ catch
   echo 'Airline not installed. It should work after running :PlugInstall'
 endtry
 
-" === vim-javascript === "
-" Enable syntax highlighting for JSDoc
-let g:javascript_plugin_jsdoc = 1
-
 " === vim-jsx === "
 " Highlight jsx syntax even in non .jsx files
 let g:jsx_ext_required = 0
 
 " === Signify === "
 let g:signify_sign_delete = '-'
-
-" === vim-jsdoc === "
-let g:jsdoc_lehre_path = '/Users/joimeecajandab/.nvm/versions/node/v12.18.3/bin/lehre'
 
 " ============================================================================ "
 " ===                                UI                                    === "
@@ -252,8 +245,8 @@ nmap <leader>e :NERDTreeFind<CR>
 
 "   <Space> - PageDown
 "   -       - PageUp
-noremap <Space> <PageDown>
-noremap - <PageUp>
+noremap + <PageDown>
+noremap _ <PageUp>
 
 " Quick window switching
 nmap <C-h> <C-w>h
@@ -262,8 +255,7 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " Window splitting
-nmap <C-]> :vsplit<CR>
-
+nmap <C-v> :vsplit<CR>
 
 " === coc.nvim === "
 "   <leader>dd    - Jump to definition of current symbol
@@ -283,10 +275,6 @@ nnoremap <silent> <leader>ds :<C-u>CocList -I -N --top symbols<CR>
 map <leader>h :%s///<left><left>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
-" === vim-jsdoc shortcuts ==="
-" Generate jsdoc for function under cursor
-nmap <leader>z :JsDoc<CR>
-
 " Delete current visual selection and dump in black hole buffer before pasting
 " Used when you want to paste over something without it getting copied to
 " Vim's default buffer
@@ -302,7 +290,11 @@ nmap <leader>f :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
-  \ 'ctrl-]': 'vsplit' }
+  \ 'ctrl-v': 'vsplit' }
+
+" === coc-prettier ==="
+vmap <leader>p  <Plug>(coc-format-selected)
+nmap <leader>p  <Plug>(coc-format-selected)
 
 " ============================================================================ "
 " ===                                 MISC.                                === "

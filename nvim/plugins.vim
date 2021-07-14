@@ -44,9 +44,6 @@ Plug 'mxw/vim-jsx'
 " VueJS syntax highlighting
 Plug 'posva/vim-vue'
 
-" Generate JSDoc commands based on function signature
-Plug 'heavenshell/vim-jsdoc'
-
 " === Syntax Highlighting === "
 " Syntax highlighting for everything
 Plug 'sheerun/vim-polyglot'
