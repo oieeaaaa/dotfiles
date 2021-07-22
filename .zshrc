@@ -4,9 +4,10 @@ fpath=( ~/dotfiles/.zsh-functions "${fpath[@]}" )
 autoload -Uz gpull
 autoload -Uz gpush
 autoload -Uz gfetch
-autoload -Uz grebase
 autoload -Uz gcheckout
+autoload -Uz grebase
 
+set -o vi
 bindkey -v
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
